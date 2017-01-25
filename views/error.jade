@@ -1,6 +1,6 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .placeholder
+    img.logo(src='images/logo.svg')
+    h2 #{error.status}: #{message}

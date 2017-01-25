@@ -17,6 +17,7 @@ body {
 .logo {
     width: 40%;
     max-width: 200px;
+    max-height: 40%;
 }
 
 p {
