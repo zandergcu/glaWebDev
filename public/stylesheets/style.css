@@ -1,0 +1,44 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F4E15B;
+  color: #363636;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 40%;
+    max-width: 200px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+
+.cursor {
+    min-width: 16px;
+    padding-right: 0px;
+    animation: flash step-end 1.4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes flash{
+  0% {
+  }
+  50% {
+    background-color: #363636;
+    color: #EEE;
+  }
+}
