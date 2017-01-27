@@ -1,17 +1,19 @@
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #F4E15B;
   color: #363636;
 }
 
-.placeholder {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 0px 20px;
 }
 
 .logo {
@@ -20,8 +22,9 @@ body {
     max-height: 40%;
 }
 
-p {
+h4 {
     font-size: 1.2rem;
+    margin: 20px auto;
     margin-top: 24px;
 }
 
