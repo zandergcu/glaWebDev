@@ -10,6 +10,7 @@ var index = require('./routes/index');
 // User profile routes
 
 var neil = require('./routes/profiles/neil'); // this routes to the files that will render your page
+var tomche = require('./routes/profiles/tomche'); // this routes to the files that will render your page
 
 
 
@@ -33,6 +34,7 @@ app.use('/', index);
 // Defining the routes for our User profiles
 
 app.use('/neil', neil);
+app.use('/tomche', tomche);
 
 
 
