@@ -11,7 +11,7 @@ var index = require('./routes/index');
 
 var neil = require('./routes/profiles/neil'); // this routes to the files that will render your page
 var tomche = require('./routes/profiles/tomche'); // this routes to the files that will render your page
-
+var bryan = require('./routes/profiles/bryan');
 
 
 
@@ -35,6 +35,7 @@ app.use('/', index);
 
 app.use('/neil', neil);
 app.use('/tomche', tomche);
+app.use('/bryan', bryan);
 
 
 
