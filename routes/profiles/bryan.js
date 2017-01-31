@@ -5,7 +5,7 @@ var router = express.Router();
 var name    = 'Bryan Docherty';
 var twitter = '@BryanMDocherty';
 var github  = 'https://www.github.com/bryandocherty';
-var blurb   = 'Graduated with BSc(Hons) in Computing Science from the University of Glasgow. Pursuing career in web delvelopment.';
+var blurb   = 'Graduated with BSc (Hons) in Computing Science from the University of Glasgow. Pursuing a career in web development.';
 
 
 /* GET home page. */
