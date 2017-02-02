@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var neil = require('./routes/profiles/neil'); // this routes to the files that will render your page
 var tomche = require('./routes/profiles/tomche'); // this routes to the files that will render your page
 var bryan = require('./routes/profiles/bryan');
+var tracy = require('./routes/profiles/tracy');
 var anguel = require('./routes/profiles/anguel');
 
 
@@ -32,7 +33,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // set some security-related headers to be sent out with each response
-app.use(helmet());
+//app.use(helmet());
 app.use('/', index);
 
 // Defining the routes for our User profiles
@@ -40,6 +41,7 @@ app.use('/', index);
 app.use('/neil', neil);
 app.use('/tomche', tomche);
 app.use('/bryan', bryan);
+app.use('/tracy', tracy);
 app.use('/anguel', anguel);
 
 
