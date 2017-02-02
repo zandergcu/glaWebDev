@@ -15,7 +15,7 @@ var tomche = require('./routes/profiles/tomche'); // this routes to the files th
 var bryan = require('./routes/profiles/bryan');
 var tracy = require('./routes/profiles/tracy');
 var anguel = require('./routes/profiles/anguel');
-
+var farhan = require('./routes/profiles/farhan');
 
 
 var app = express();
@@ -43,7 +43,7 @@ app.use('/tomche', tomche);
 app.use('/bryan', bryan);
 app.use('/tracy', tracy);
 app.use('/anguel', anguel);
-
+app.use('/farhan', farhan);
 
 
 
