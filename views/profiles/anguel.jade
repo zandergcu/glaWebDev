@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .container
+    .profile-card
+      .top
+        .image
+          img.mugshot(src='images/anguel.jpg')
+        .details
+          .name #{name}
+          .twitter #{twitter}
+          a(href="#{github}",target="_blank").button GitHub
+      if blurb
+        .about
+          hr
+          .blurb !{blurb}
