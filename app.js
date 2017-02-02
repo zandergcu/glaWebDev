@@ -33,7 +33,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // set some security-related headers to be sent out with each response
-app.use(helmet());
+// app.use(helmet());
 app.use('/', index);
 
 // Defining the routes for our User profiles
