@@ -16,6 +16,7 @@ var bryan = require('./routes/profiles/bryan');
 var tracy = require('./routes/profiles/tracy');
 var anguel = require('./routes/profiles/anguel');
 var farhan = require('./routes/profiles/farhan');
+var neil_b = require('./routes/profiles/neil_b');
 
 
 var app = express();
@@ -26,7 +27,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-// app.use(helmet());
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -45,8 +46,7 @@ app.use('/bryan', bryan);
 app.use('/tracy', tracy);
 app.use('/anguel', anguel);
 app.use('/farhan', farhan);
-
-
+app.use('/neil_b', neil_b);
 
 
 // catch 404 and forward to error handler
