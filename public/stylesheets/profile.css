@@ -2,7 +2,7 @@
     background-color: #FFF;
     color: #555;
 
-    width: 60%;
+    width: 70%;
     max-width: 300px;
 
     padding: 20px;
@@ -17,16 +17,23 @@
 .top{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-.image {
-    width: 120px;
-    height: 120px;
-    flex-shrink: 0;
+.image-wrapper {
     overflow: hidden;
-    margin-right: 10px;
     border-radius: 4px;
+    flex-grow: 1;
+    width: 100%;
+    flex-basis: 120px;
+    position: relative;
+    margin: 2px;
+}
+
+.aspect-ratio {
+    padding-bottom: 100%;
 }
 
 img{
@@ -34,16 +41,21 @@ img{
 }
 
 .details{
+    height: auto;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 120px;
+    justify-content: space-between;
+    margin: 2px;
 }
 
 .mugshot {
-    height: 120px;
-    width: 120px;
-    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .name {
     font-size: 1.4rem;
@@ -51,6 +63,7 @@ img{
 .twitter {
     font-size: 1.0rem;
     color: #AAA;
+    margin-bottom: 10px;
 }
 .button{
     margin-top: auto;

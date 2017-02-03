@@ -4,14 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var helmet = require('helmet');
 
 var index = require('./routes/index');
 
 // User profile routes
-
-var neil = require('./routes/profiles/neil'); // this routes to the files that will render your page
-var tomche = require('./routes/profiles/tomche'); // this routes to the files that will render your page
+// this routes to the files that will render your page
+var neil = require('./routes/profiles/neil'); 
+var tomche = require('./routes/profiles/tomche');
 var bryan = require('./routes/profiles/bryan');
 var tracy = require('./routes/profiles/tracy');
 var anguel = require('./routes/profiles/anguel');
@@ -26,27 +25,23 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-// app.use(helmet());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// set some security-related headers to be sent out with each response
-// app.use(helmet());
+
+/* routes */
 app.use('/', index);
 
-// Defining the routes for our User profiles
-
+/* routes for our User profiles */
 app.use('/neil', neil);
 app.use('/tomche', tomche);
 app.use('/bryan', bryan);
 app.use('/tracy', tracy);
 app.use('/anguel', anguel);
 app.use('/farhan', farhan);
-
-
 
 
 // catch 404 and forward to error handler
