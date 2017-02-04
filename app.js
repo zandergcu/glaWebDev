@@ -9,7 +9,7 @@ var index = require('./routes/index');
 
 // User profile routes
 // this routes to the files that will render your page
-var neil = require('./routes/profiles/neil'); 
+var neil = require('./routes/profiles/neil');
 var tomche = require('./routes/profiles/tomche');
 var bryan = require('./routes/profiles/bryan');
 var tracy = require('./routes/profiles/tracy');
@@ -22,7 +22,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

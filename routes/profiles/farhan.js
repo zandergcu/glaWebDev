@@ -10,7 +10,7 @@ var blurb   = "Aspiring web/software developer, avid coffee drinker.";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/farhan.jade', {
+  res.render('profiles/farhan.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,

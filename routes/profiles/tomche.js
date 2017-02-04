@@ -10,7 +10,7 @@ var blurb   = "Hi, I am Tom. I speak several human languages and I speak compute
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/tomche.jade', {
+  res.render('profiles/tomche.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,

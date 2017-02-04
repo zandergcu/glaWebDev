@@ -10,7 +10,7 @@ var blurb   = 'Graduated with BSc (Hons) in Computing Science from the Universit
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/bryan.jade', {
+  res.render('profiles/bryan.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,

@@ -10,7 +10,7 @@ var blurb   = "Hi, I'm Tracy and have a profile!!";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/tracy.jade', {
+  res.render('profiles/tracy.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,

@@ -10,7 +10,7 @@ var blurb   = "Hi, my name is Neil (other Neil) and I am a student at West Colle
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/neil_b.jade', {
+  res.render('profiles/neil_b.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,
