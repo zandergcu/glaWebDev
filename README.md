@@ -16,6 +16,12 @@ If everything was fine and installed succesfully, in your shell navigate to
 node www
 ```
 
+Alternatively, you can go into the root of the glaWebDev folder and within the shell execute:
+```
+npm start
+```
+because the command `npm start` is configured within the `package.json` to run `node www`
+
 After this step you should be able to see project being live in browser at
 <http://localhost:3000>
 
