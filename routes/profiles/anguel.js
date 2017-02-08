@@ -10,7 +10,7 @@ var blurb   = 'I am a student at the University of Glasgow. That is in fact a re
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/anguel', {
+  res.render('profiles/anguel.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,

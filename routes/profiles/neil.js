@@ -10,7 +10,7 @@ var blurb   = 'Neil is a physics teacher and self-taught web-developer with a de
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('profiles/neil.jade', {
+  res.render('profiles/neil.pug', {
     name    : name,
     twitter : twitter,
     blurb   : blurb,
