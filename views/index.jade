@@ -4,3 +4,8 @@ block content
   .container
     img.logo(src='images/logo.svg')
     h4 coming soon#[span.cursor &#x2000]
+    form.input-group(action='slack',method='POST')
+      input.input-group__item.input__email(type="email",name="email")
+      input.input-group__item.input__submit(type='submit',value='>')
+
+

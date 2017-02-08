@@ -5,6 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
+var https = require('https');
 
 // User profile routes
 // this routes to the files that will render your page
@@ -43,6 +44,38 @@ app.use('/tracy', tracy);
 app.use('/anguel', anguel);
 app.use('/farhan', farhan);
 app.use('/neil_b', neil_b);
+
+
+// testing slack
+var options = {
+  hostname: "slack.com",
+  path: '/api/users.admin.invite?token=xoxp-134104006004-133319747568-136878967203-441148062d1bb151ed2f33c705640d44&email=t.chmelevskij@icloud.com&resend=true',
+  method: 'GET'
+}
+
+app.post('/slack', (req, res)=>{
+
+  console.log("req.query" + req.query);
+  console.log("req.body" + req.body.email);
+  /*
+  var slack = https.request(options, (respSlack) => {
+    console.log('statusCode: ', respSlack.statusCode);
+    console.log('headers: ', respSlack.headers);
+
+    respSlack.on('data', (d) => {
+      process.stdout.write(d);
+      res.send(d);
+    });
+  });
+
+  slack.on('error', (e) => {
+    console.error(e);
+  });
+
+  slack.end();
+  */
+
+});
 
 
 // catch 404 and forward to error handler
