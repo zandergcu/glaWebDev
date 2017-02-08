@@ -7,20 +7,59 @@ body {
   color: #363636;
 }
 
-.container {
+.main {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 0px 20px;
+    height: 50vh;
 }
-
 .logo {
-    width: 40%;
+    width: 100%;
     max-width: 200px;
     max-height: 40%;
 }
+.logo__small {
+    width: 20%;
+    max-width: 100px;
+    max-height: 20%;
+}
+
+
+.colwraper {
+}
+
+.col {
+    display: flex;
+    flex: 2 1 45%;
+    padding: 20px;
+}
+.col-title {
+    flex-basis: 100%;
+    text-align: center;
+}
+.col.left {
+    display: flex;
+    flex-direction: column;
+}
+.col.right {
+    display: flex;
+    flex-direction: column;
+}
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
 
 h4 {
     font-size: 1.2rem;
@@ -45,4 +84,48 @@ h4 {
     background-color: #363636;
     color: #EEE;
   }
+}
+
+
+
+
+
+/* SIGN UP TO SLACK */
+
+#slackform{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    min-width: 240px;
+}
+
+
+#slackform > button, #slackform > input  {
+    border: 2px solid #363636;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #363636;
+    font-weight: 700;
+    margin-bottom: 8px;
+    transition: all 300ms ease;
+}
+#slackform > input::-webkit-input-placeholder  {
+    /*background-color: #FFF;*/
+    color: rgba(54,54,54,.5);
+}
+#slackform > input:focus  {
+    background-color: #FFF;
+    transition: background-color 300ms ease;
+}
+#slackform > label {
+    position: absolute;
+    opacity: 0;
+    left: -1000px;
+}
+#slackform > button:hover {
+    background-color: #363636;
+    color: #F4E15B;
 }

@@ -1,6 +1,22 @@
 extends layout
 
 block content
-  .container
-    img.logo(src='images/logo.svg')
-    h4 coming soon#[span.cursor &#x2000]
+
+  .main
+    .hero
+      img.logo(src='images/logo.svg')
+      //h4 coming soon#[span.cursor &#x2000]
+    .colwrapper.flexcontainer
+      .col.left
+        .flexcontainer
+          h2.col-title Join us on Slack
+          form(id="slackform")
+            label(for="mail") Email
+            input(type="text" id="mail" placeholder="youremail@address.com")
+            button(value="join" onclick="slackform.id=this.value") Request Invitation
+      .col.right
+        .flexcontainer
+          h2.col-title Upcoming Events...
+          .event
+
+  script(src='/javascripts/main.js')

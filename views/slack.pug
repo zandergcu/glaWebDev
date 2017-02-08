@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .container
+    img.logo__small(src='images/logo.svg')
+    h4 Request an invitation to join the Slack group.
+
+    form(id="slackform")
+      label(for="mail") Email
+      input(type="text" id="mail" placeholder="youremail@address.com")
+      button(value="join" onclick="slackform.id=this.value") Request Invitation
+
+  script(src='/javascripts/main.js')

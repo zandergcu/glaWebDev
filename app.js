@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 
+var slack = require('./routes/slack');
+
 // User profile routes
 // this routes to the files that will render your page
 var neil = require('./routes/profiles/neil');
@@ -36,6 +38,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /* routes */
 app.use('/', index);
+
+/* mail route */
+app.use('/slack', slack);
+
 
 /* routes for our User profiles */
 app.use('/neil', neil);
