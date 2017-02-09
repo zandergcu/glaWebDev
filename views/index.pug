@@ -1,7 +1,6 @@
 extends layout
 
 block content
-
   .main
     .hero
       img.logo(src='images/logo.svg')
@@ -9,12 +8,12 @@ block content
     .colwrapper.flexcontainer
       .col.left
         .flexcontainer
-          h2.col-title Join us on Slack
-          form(id="slackform")
-            label(for="mail") Email
-            input(type="text" id="mail" placeholder="youremail@address.com")
-            button(value="join" onclick="slackform.id=this.value") Request Invitation
-      .col.right
+          h2.col-title Join us on
+            img.slacklogo(src='images/Slack_Monochrome_Black.svg')
+          form.input-group(action='slack',method='POST')
+            input.input-group__item.input__email#emailInput(type="email",name="email")
+            input.input-group__item.input__submit#emailSubmit(type='submit',value='REQUEST INVITATION',disabled)
+    //  .col.right
         .flexcontainer
           h2.col-title Upcoming Events...
           .event

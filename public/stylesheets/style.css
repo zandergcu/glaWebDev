@@ -1,3 +1,11 @@
+/* Normalize */
+input {
+  margin: 0;
+  padding: 0;
+  background:white;
+  border: none;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -17,12 +25,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
 }
 .logo {
-    width: 100%;
-    max-width: 200px;
-    max-height: 40%;
+    height: 90%;
+    max-width: 120px;
 }
 .logo__small {
     width: 20%;
@@ -42,6 +49,11 @@ body {
 .col-title {
     flex-basis: 100%;
     text-align: center;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* this should be equal to the height of the slack logo*/
 }
 .col.left {
     display: flex;
@@ -88,44 +100,44 @@ h4 {
 
 
 
+.slacklogo{
+    height: 80px;
+    margin-right: -24px;
+    margin-left: -14px;
+}
 
-
-/* SIGN UP TO SLACK */
-
-#slackform{
+/* BEM naming is used for generic and new elements */
+/*==== Forms ====*/
+.input-group {
     display: flex;
     flex-direction: column;
     align-items:stretch;
     min-width: 240px;
 }
 
-
-#slackform > button, #slackform > input  {
+.input-group__item {
     border: 2px solid #363636;
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
-    text-transform: uppercase;
     text-align: center;
     color: #363636;
     font-weight: 700;
     margin-bottom: 8px;
     transition: all 300ms ease;
 }
-#slackform > input::-webkit-input-placeholder  {
-    /*background-color: #FFF;*/
-    color: rgba(54,54,54,.5);
-}
-#slackform > input:focus  {
+
+.input__email:focus {
     background-color: #FFF;
-    transition: background-color 300ms ease;
 }
-#slackform > label {
-    position: absolute;
-    opacity: 0;
-    left: -1000px;
-}
-#slackform > button:hover {
+.input__submit {
+    border: 0px;
+/*.input__submit:hover, .input__submit:focus {*/
     background-color: #363636;
     color: #F4E15B;
+}
+
+.input__submit:disabled {
+    background-color: transparent;
+    color: rgba(54,54,54,.2);
 }
