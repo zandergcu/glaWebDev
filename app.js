@@ -18,6 +18,7 @@ var tracy = require('./routes/profiles/tracy');
 var anguel = require('./routes/profiles/anguel');
 var farhan = require('./routes/profiles/farhan');
 var neil_b = require('./routes/profiles/neil_b');
+var zander = require('./routes/profiles/zander');
 
 
 var app = express();
@@ -50,6 +51,7 @@ app.use('/tracy', tracy);
 app.use('/anguel', anguel);
 app.use('/farhan', farhan);
 app.use('/neil_b', neil_b);
+app.use('/zander', zander);
 
 
 // Slack Request Invite
